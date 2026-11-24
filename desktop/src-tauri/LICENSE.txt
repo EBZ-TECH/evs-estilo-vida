@@ -1,0 +1,13 @@
+EVS CLÍNICO — LICENCIA DE USO
+
+Copyright © 2026 La empresa titular de EVS Clínico. Todos los derechos reservados.
+
+Desarrollo del software (implementación técnica): Michael Lozada — Ing en TIC — EBZ.
+
+EVS Clínico es software propietario desarrollado en el marco de un trabajo de titulación (tesis) y cedido a la empresa titular para su uso en el ámbito profesional o académico que esta autorice. Al instalar o utilizar la aplicación, usted acepta utilizarla únicamente conforme a las instrucciones y políticas de la empresa titular.
+
+Este software se concede bajo licencia de uso, no en venta. Queda prohibida la copia, distribución, ingeniería inversa, descompilación o modificación no autorizada del programa, salvo en la medida permitida por la ley aplicable y por acuerdo expreso por escrito de la empresa titular.
+
+El software se suministra "tal cual", sin garantías expresas o implícitas. La empresa titular y quienes intervinieron en el desarrollo no serán responsables de daños derivados del uso o la imposibilidad de uso de la aplicación, dentro de los límites que permita la ley.
+
+Para soporte, permisos de uso adicionales o consultas sobre distribución, contacte a la empresa titular del software por los canales que esta haya definido.

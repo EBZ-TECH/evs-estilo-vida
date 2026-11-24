@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EVS Clínico
 
-## Getting Started
+Aplicación de **escritorio** para la Evaluación de Determinantes de Estilos de vida y Estado de Cambio.
 
-First, run the development server:
+> El prototipo web (Next.js) fue retirado. La versión vigente es la app nativa en `desktop/`.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Stack
+
+- **Tauri 2** + **Rust** (shell nativo, SQLite, PIN con Argon2id)
+- **React 19** + **TypeScript** + **Vite 8** + **Tailwind CSS 4**
+
+## Estructura
+
+```
+desktop/          → aplicación de escritorio (código fuente)
+Documentación/    → guía técnica, arquitectura y materiales clínicos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Desarrollo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd desktop
+npm install
+npm run tauri:dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build instalador Windows (.exe)
 
-## Learn More
+```bash
+cd desktop
+npm run tauri:build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Salida típica:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+desktop/src-tauri/target/release/bundle/nsis/EVS Clínico_<ver>_x64-setup.exe
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Documentación
 
-## Deploy on Vercel
+- [Guía técnica de usuario](Documentación/GUIA-TECNICA-USUARIO-EVS-CLINICO.md)
+- [Arquitectura y mesa de trabajo](Documentación/ARQUITECTURA-Y-MESA-DE-TRABAJO.md)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Autor
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Michael Lozada — Ing. en TIC — EBZ

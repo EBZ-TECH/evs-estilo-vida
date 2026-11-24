@@ -1,0 +1,71 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "EVS Clínico",
+  "version": "2.0.0",
+  "identifier": "com.ebztec.evs",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:1420",
+    "beforeDevCommand": "src-tauri\\run-dev.bat",
+    "beforeBuildCommand": "src-tauri\\run-build.bat"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "EVS Clínico",
+        "width": 1280,
+        "height": 820,
+        "minWidth": 960,
+        "minHeight": 640,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "createUpdaterArtifacts": true,
+    "targets": ["nsis"],
+    "publisher": "Michael Lozada - Ing en TIC - EBZ",
+    "copyright": "© 2026 Michael Lozada - Ing en TIC - EBZ. Todos los derechos reservados.",
+    "shortDescription": "Evaluación de estilos de vida e informe diagnóstico (EVS).",
+    "longDescription": "EVS Clínico — aplicación de escritorio para la encuesta clínica, informe diagnóstico y biblioteca de informes. Desarrollo: Michael Lozada - Ing en TIC - EBZ.",
+    "category": "Medical",
+    "licenseFile": "LICENSE.txt",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "languages": ["Spanish", "English"],
+        "displayLanguageSelector": false,
+        "installerIcon": "icons/icon.ico",
+        "uninstallerIcon": "icons/icon.ico",
+        "startMenuFolder": "EVS · EBZ",
+        "installMode": "currentUser"
+      }
+    },
+    "android": {
+      "debugApplicationIdSuffix": ".debug"
+    }
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDk2NjJCQTQ2MDMwRDU5MUEKUldRYVdRMERScnBpbG4xNU5LOHNQMGlQdU9XS1A1NXhadGhrdkxrcjU4eDN3aDE4S1VqdjJ5V3kK",
+      "endpoints": [
+        "https://httpbin.org/status/204"
+      ],
+      "windows": {
+        "installMode": "passive"
+      }
+    }
+  }
+}
